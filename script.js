@@ -58,10 +58,6 @@ function dataLoaded(error, rows){
     //with data loaded, we can now mine the data
     var gdpPerCapMin = d3.min(rows, function(d){return d.gdpPerCap}),
         gdpPerCapMax = d3.max(rows, function(d){return d.gdpPerCap});
-    var priComMin = d3.min(rows, function(d){return d.priCom}),
-        priComMax = d3.max(rows, function(d){return d.priCom});
-    var urbanPopMin = d3.min(rows, function(d){return d.urbanPop}),
-        urbanPopMax = d3.max(rows, function(d){return d.urbanPop});
 
 
     //with mined information, set up domain and range for x and y scales
